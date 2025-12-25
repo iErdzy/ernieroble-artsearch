@@ -1,4 +1,4 @@
-const apiKey = 'cf8db2e159b246218d84fdf1b2b9054b'; 
+const apiKey = 'YOUR_API_KEY_HERE'; 
 
 const resultsGrid = document.getElementById('resultsGrid');
 const searchInput = document.getElementById('searchInput');
@@ -76,4 +76,5 @@ function displayResults(artworks, isRandom) {
 }
 
 function showLoading() { resultsGrid.innerHTML = '<p class="subtitle">Curating the gallery...</p>'; }
+
 function showError(msg) { resultsGrid.innerHTML = `<p style="color:red; font-style:italic;">${msg}</p>`; }
